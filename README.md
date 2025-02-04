@@ -44,7 +44,7 @@ cmd: npm install @cucumber/cucumber
     - create step definition file (with used tag -> description)
     - link steps to actions
       - skeleton can be defined by cucumber by default when trying to run the feature file for 1st time
-        - can run by cmd: npx cucumber-js
+        - can run by cmd: **npx cucumber-js**
           - this will execute node_modules->.bin-> cucumber-js 
           - will show in terminal what/how is missing
 - inside the features folder, create 'step_definitions' folder
