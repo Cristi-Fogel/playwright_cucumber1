@@ -1,7 +1,8 @@
 import {test, expect, Locator, Page} from '@playwright/test';
 
 
-export class FrontentHerokuLandingPage{
+
+ class FrontentHerokuLandingPage{
     page:           Page;
     logoutButton:   Locator;
     loginMessageOk: Locator;
@@ -20,3 +21,6 @@ export class FrontentHerokuLandingPage{
         return (await this.loginMessageOk.textContent()) ?? '';
     }
 }
+
+// export default FrontentHerokuLandingPage;
+module.exports = FrontentHerokuLandingPage;

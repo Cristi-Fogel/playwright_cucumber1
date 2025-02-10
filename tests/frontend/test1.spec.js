@@ -1,8 +1,10 @@
-
 import { test, expect } from '@playwright/test';
 import { getURL } from "../../utils/urlBuilder";
-import { FrontendHerokuLoginPage } from '../../pageObjects/frontentHerokuLoginPage';
-import { FrontentHerokuLandingPage } from '../../pageObjects/frontentHerokuLandingPage';
+// import  FrontendHerokuLoginPage  from '../../pageObjects/frontentHerokuLoginPage';
+// import  FrontentHerokuLandingPage  from '../../pageObjects/frontentHerokuLandingPage';
+const FrontendHerokuLoginPage = require('../../pageObjects/frontentHerokuLoginPage');
+const FrontentHerokuLandingPage = require('../../pageObjects/frontentHerokuLandingPage');
+
 import { validationStrings } from '../../validationStrings';
 import { credentials } from '../../baseCredentials';
 

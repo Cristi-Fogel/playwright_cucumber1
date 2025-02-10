@@ -1,7 +1,7 @@
 import {test, expect, Locator, Page} from '@playwright/test';
 
 
-export class FrontendHerokuLoginPage{
+ class FrontendHerokuLoginPage{
     page:           Page;
     usernameInput:  Locator;
     passwordInput:  Locator;
@@ -37,3 +37,6 @@ export class FrontendHerokuLoginPage{
         return  (await this.logoutMessage.textContent()) ?? '';
     }
 }
+
+// export default FrontendHerokuLoginPage;
+module.exports = FrontendHerokuLoginPage;
