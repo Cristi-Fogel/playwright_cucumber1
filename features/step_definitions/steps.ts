@@ -1,11 +1,14 @@
-const { Given, When, Then, After } = require('@cucumber/cucumber');
-const { expect } = require('@playwright/test');
-const playwright = require('playwright');
-const POManager = require('../../pageObjects/POManager');
-const { getURL } = require('../../utils/urlBuilderJS');
-const validationStrings = require('../../validationStrings');
+import { Given, When, Then, After } from '@cucumber/cucumber';
+import { expect } from '@playwright/test';
+import playwright, { Browser, Page, BrowserContext } from 'playwright';
+import POManager from '../../pageObjects/POManager';
+import { getURL } from '../../utils/urlBuilderJS';
+import { validationStrings } from '../../validationStrings';
 
-let browser, context, page, poManager;
+let browser: Browser;
+let context: BrowserContext;
+let page: Page;
+let poManager: POManager;
 
 Given('I open the login page', async function () {
     browser = await playwright.chromium.launch({ headless: false });
@@ -20,7 +23,7 @@ Given('I open the login page', async function () {
     await expect(page).toHaveTitle("The Internet");
 });
 
-When('I enter username {string} and password {string}', async function (username, password) {
+When('I enter username {string} and password {string}', async function (username: string, password: string) {
     await this.loginPage.login(username, password);
 });
 

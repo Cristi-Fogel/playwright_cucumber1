@@ -14,19 +14,25 @@
             "keyword": "Given ",
             "line": 4,
             "name": "I open the login page",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:10"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 2696361200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I enter username \"admin\" and password \"admin123\"",
+            "name": "I enter username \"tomsmith\" and password \"SuperSecretPassword!\"",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:23"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 353468700
             }
           },
           {
@@ -34,9 +40,13 @@
             "keyword": "And ",
             "line": 6,
             "name": "I click on the login button",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:27"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 5006683299,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\z_programming\\auto\\playwright\\playwright_cucumber1\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)"
             }
           },
           {
@@ -44,9 +54,20 @@
             "keyword": "Then ",
             "line": 7,
             "name": "I should see a successful login message",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:31"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 384624499
             }
           }
         ],
@@ -65,9 +86,12 @@
             "keyword": "Given ",
             "line": 10,
             "name": "I open the login page",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:10"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 2586479600
             }
           },
           {
@@ -75,9 +99,12 @@
             "keyword": "When ",
             "line": 11,
             "name": "I enter username \"wrongUser\" and password \"wrongPass\"",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:23"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 331512600
             }
           },
           {
@@ -85,9 +112,12 @@
             "keyword": "And ",
             "line": 12,
             "name": "I click on the login button",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:27"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 339362800
             }
           },
           {
@@ -95,9 +125,21 @@
             "keyword": "Then ",
             "line": 13,
             "name": "I should see an error message",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:36"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 5004225899,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\z_programming\\auto\\playwright\\playwright_cucumber1\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 308157299
             }
           }
         ],

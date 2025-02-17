@@ -2,7 +2,7 @@ Feature: User Login
 
   Scenario: Successful login to the application
     Given I open the login page
-    When I enter username "admin" and password "admin123"
+    When I enter username "tomsmith" and password "SuperSecretPassword!"
     And I click on the login button
     Then I should see a successful login message
 
