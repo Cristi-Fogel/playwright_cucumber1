@@ -2,7 +2,8 @@ export const validationStrings = {
     login: {
       invalidUsername: "Your username is invalid!",
       invalidPassword: "Your password is invalid!",
-      successMessage: "Welcome to the Secure Area. When you are done click logout below.",
+      successMessage: "You logged into a secure area!",
+      errorMessage: "Your username is invalid!",
     },
     logout: {
       successMesage: "You logged out of the secure area!",

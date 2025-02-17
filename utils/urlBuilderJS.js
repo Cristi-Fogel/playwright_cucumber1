@@ -1,4 +1,4 @@
-const { baseURLs, paths } = require('./config.js');
+const { baseURLs, paths } = require('../config'); // Remove the .js extension
 
 /**
  * Constructs the full URL for a given base and path.
