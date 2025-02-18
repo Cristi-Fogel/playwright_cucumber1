@@ -1,8 +1,13 @@
-const FrontendHerokuLoginPage = require('./frontentHerokuLoginPage');
-const FrontentHerokuLandingPage = require('./frontentHerokuLandingPage');
+import FrontendHerokuLoginPage from './frontendHerokuLoginPage';
+import FrontentHerokuLandingPage from './frontendHerokuLandingPage';
+import { Page } from 'playwright';
 
 class POManager {
-    constructor(page) {
+    private page: Page;
+    private frontendHerokuLoginPage: FrontendHerokuLoginPage;
+    private frontentHerokuLandingPage: FrontentHerokuLandingPage;
+
+    constructor(page: Page) {
         this.page = page;
         this.frontendHerokuLoginPage = new FrontendHerokuLoginPage(page);
         this.frontentHerokuLandingPage = new FrontentHerokuLandingPage(page);
@@ -17,4 +22,4 @@ class POManager {
     }
 }
 
-module.exports = POManager;
+export default POManager;

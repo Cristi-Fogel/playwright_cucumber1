@@ -16,4 +16,4 @@ export const credentials = {
     tokens: {
       authToken: "AUTH_TOKEN_EXAMPLE",
     },
-  };
+};

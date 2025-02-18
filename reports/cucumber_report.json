@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2696361200
+              "duration": 3138651899
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 353468700
+              "duration": 386073400
             }
           },
           {
@@ -45,8 +45,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5006683299,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\z_programming\\auto\\playwright\\playwright_cucumber1\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)"
+              "duration": 4580456099,
+              "error_message": "locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('button.radius:has-text(\"Login\")')\u001b[22m\n\n    at World.<anonymous> (D:\\z_programming\\auto\\playwright\\playwright_cucumber1\\features\\step_definitions\\steps.js:28:38)"
             }
           },
           {
@@ -67,7 +67,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 384624499
+              "duration": 234973900
             }
           }
         ],
@@ -91,7 +91,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2586479600
+              "duration": 2744311399
             }
           },
           {
@@ -104,7 +104,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 331512600
+              "duration": 355879599
             }
           },
           {
@@ -117,7 +117,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 339362800
+              "duration": 320368600
             }
           },
           {
@@ -130,7 +130,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5004225899,
+              "duration": 5012051200,
               "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\z_programming\\auto\\playwright\\playwright_cucumber1\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)"
             }
           },
@@ -139,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 308157299
+              "duration": 163787000
             }
           }
         ],

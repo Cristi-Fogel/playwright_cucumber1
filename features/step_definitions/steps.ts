@@ -1,8 +1,8 @@
 import { Given, When, Then, After } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import playwright, { Browser, Page, BrowserContext } from 'playwright';
-import POManager from '../../pageObjects/POManager';
-import { getURL } from '../../utils/urlBuilderJS';
+import { chromium, Browser, Page, BrowserContext } from 'playwright';
+import POManager from '../../pageObjects-TS/POManager';
+import { getURL } from '../../utils/urlBuilderTS';
 import { validationStrings } from '../../validationStrings';
 
 let browser: Browser;
@@ -11,7 +11,7 @@ let page: Page;
 let poManager: POManager;
 
 Given('I open the login page', async function () {
-    browser = await playwright.chromium.launch({ headless: false });
+    browser = await chromium.launch({ headless: false });
     context = await browser.newContext();
     page = await context.newPage();
     poManager = new POManager(page);

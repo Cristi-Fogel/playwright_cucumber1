@@ -16,5 +16,4 @@ export const validationStrings = {
       usernameTaken: "Username already taken.",
       registrationSuccess: "Registration successful!",
     },
-  };
-  
+};
